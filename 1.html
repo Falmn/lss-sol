@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-legitimation</title>
+    <link rel="stylesheet" type="text/css" href="css/stilmall.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="main-header">
+            <nav id="meny">
+                <ul>
+                    <li><a href="index.html" class="active">1. Sök insats</a></li>
+                    <li><a>2. Medgivande</a></li>
+                    <li><a>3. Ansökan</a></li>
+                    <li><a>4. Förhandsgranska</a></li>
+                    <li><a>5. Skicka in</a></li>
+                </ul>
+            </nav>
+        </header>
+        <span id="chooseLanguage">
+            <label for="langu">Ändra språk / Change language</label>
+            <select name="langu" id="langu">
+                <option value="sv">Svenska</option>
+                <option value="sa">Samiska</option>
+                <option value="fi">Finska</option>
+                <option value="me">Meänkieli</option>
+            </select>
+        </span>
+        <main id="content">
+            <form action="2.html">
+                <p>
+                    <label for="u18">Jag söker stöd för</label>
+                    <input type="radio" id="vuxen" name="u18" checked>
+                    <label for="u18" value="false">Mig själv</label>&nbsp;
+
+                    <input type="radio" id="u18" name="u18" value="true">
+                    <label for="u18">Mitt barn</label>
+
+                    <input type="radio" id="annanvuxen" name="u18" value="true">
+                    <label for="u18">Någon annan vuxen</label>
+                </p>
+                <label for="persnr">Personnummer</label>
+                <input id="persnr" type="text" placeholder="ÅÅÅÅMMDDXXXX">
+
+                <p><label for="id">Logga in via</label>
+                    <input type="radio" id="bankid" name="id" checked>
+                    <label for="id" value="false">BankID</label>&nbsp;
+
+
+                    <input type="radio" id="frejaid" name="id" value="true">
+                    <label for="id">FrejaID</label>
+
+                    <input type="radio" id="ejinloggad" name="id" value="true">
+                    <label for="id">Fortsätt utan att logga in</label>
+                </p>
+                <p><input type="submit" value="Fortsätt" /></p>
+            </form>
+            <p> <a title='Klicka här för ' href="https://www.skelleftea.se/Dokument/Dokument/Omsorg%20och%20hj%C3%A4lp/a26261f9-39cd-417e-ac57-1e489a844517.pdf">Jag har inte e-legitimation</a></p>
+            <p>
+                <a title='Klicka för hjälp' href="google.com">Hjälp</a>
+            </p>
+        </main>
+        <footer>
+            <form action="1.html">
+                <input id="tbx" type="submit" value="Tillbaka"/>
+            </form>
+            <form action="2.html">
+                <input id="forts" type="submit" value="Fortsätt" />
+            </form>
+        </footer>
+    </div>
+</body>
+
+</html>

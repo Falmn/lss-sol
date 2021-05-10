@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Medgivande</title>
+    <link rel="stylesheet" type="text/css" href="css/stilmall.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="main-header">
+            <nav id="meny">
+                <ul>
+                    <li><a href="index.html">1. Sök insats</a></li>
+                    <li><a href="2.html" class="active">2. Medgivande</a></li>
+                    <li><a>3. Ansökan</a></li>
+                    <li><a>4. Förhandsgranska</a></li>
+                    <li><a>5. Skicka in</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <section id="kontakt">
+                <form id="kontaktform" method="get" action="3.html">
+                    <label>Epost</label>
+                    <input id="emailinput" type="email" placeholder="Ange din epostadress" />
+                    <label>Mobilnummer</label>
+                    <input id="tel" type="mobile" placeholder="Ange ditt telefonnummer" />
+                    <p>Jag söker stöd enligt
+                        <input type="radio" id="lss" name="lss" checked>
+                        <label for="lss" value="false">LSS</label>&nbsp;
+
+                        <input type="radio" id="ickelss" name="lss" value="true">
+                        <label for="lss">SOL</label>
+                    </p>
+                    <p>Hur kan vi lättast nå dig?
+                        <label for="tele">Ringa</label>
+                        <input type="checkbox" id="tele">
+                        <label for="sms">Sms:a</label>
+                        <input type="checkbox" id="sms">
+                        <label for="mejl">E-posta</label>
+                        <input type="checkbox" id="mejl">
+                    </p>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <form action="1.html">
+                <input id="tbx" type="submit" value="Tillbaka" />
+            </form>
+            <form action="3.html">
+                <input id="forts" type="submit" value="Fortsätt" />
+            </form>
+        </footer>
+    </div>
+</body></html>

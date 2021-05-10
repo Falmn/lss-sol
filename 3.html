@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personuppgifter</title>
+    <link rel="stylesheet" type="text/css" href="css/stilmall.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="main-header">
+            <nav id="meny">
+                <ul>
+                    <li><a href="index.html">1. Sök insats</a></li>
+                    <li><a href="2.html">2. Medgivande</a></li>
+                    <li><a href="3.html" class="active">3. Ansökan</a></li>
+                    <li><a>4. Förhandsgranska</a></li>
+                    <li><a>5. Skicka in</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <form id="kontaktform3" method="get" action="4.html">
+                <p><label>Om funktionsnedsättningen</label></p>
+                <textarea id="messageinput" placeholder="Här skriver du om funktionsnedsättningen"></textarea>
+
+                <p><label>Jag behöver stöd med</label></p>
+                <textarea id="messageinput" placeholder="Här fyller du i vad du behöver stöd med"></textarea>
+                <h3>Insatser enligt lagen om stöd och service till vissafunktionshindrade(LSS)</h3>
+                <h4>Kryssa i rutorna du söker</h4>
+                <p>
+                    <input type="checkbox">
+                    <label>Personlig assistent, 9 § 2</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Ledsagarservice, 9 § 3 </label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Kontaktperson, 9 § 4</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Avlösarservice i hemmet, 9 § 5</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Korttidsvistelse utanför hemmet, 9 § 6 </label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Bostad med särskild service för vuxna, gruppbostad, 9 § 9</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Bostad med särskild service för vuxna, servicebostad, 9 § 9</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label>Daglig verksamhet, 9 § 10</label>
+                </p>
+                <p>
+                    <a title='Klicka här för en kort beskrivning av de olika LSS-insatserna' href="https://www.skelleftea.se/Dokument/Dokument/Omsorg%20och%20hj%C3%A4lp/Broschyr%20LSS%20-%20informationsfolder.pdf">Kort beskrivning av de olika insatser ovan</a>
+                </p>
+
+                <p>
+                    <input type="checkbox">
+                    <label>Jag har redan en LSS-insats och vill söka om en individuell plan, 10 § </label>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <form action="2.html">
+                <input id="tbx" type="submit" value="Tillbaka" />
+            </form>
+            <form action="4.html">
+                <input id="forts" type="submit" value="Fortsätt" />
+            </form>
+        </footer>
+    </div>
+
+</body></html>
